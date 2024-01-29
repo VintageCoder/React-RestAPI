@@ -1,0 +1,30 @@
+package LinkedList;
+
+public class LinkedList {
+	
+	Node head;
+	
+	public static class Node{
+		int value;
+		Node next;
+		Node(int value){
+			this.value=value;
+		}
+	}
+	
+	public static LinkedList insert(LinkedList list,int new_value) {
+		if (list.head==null) {
+			list=new_value;
+		}
+		return list;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList list=new LinkedList();
+		list.insert(list, 5);
+		
+	}
+
+}
